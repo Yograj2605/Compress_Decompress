@@ -21,7 +21,7 @@ def home():
         os.remove(f)
     return render_template("home.html")
 
-app.config["FILE_UPLOADS"] = "/home/ubuntu/HuffmanCoding/uploads"
+app.config["FILE_UPLOADS"] = "uploads"
 
 @app.route("/compress", methods=["GET", "POST"])
 def compress():
